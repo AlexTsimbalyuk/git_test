@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Bubbler One', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1rem;
+}
+
+.block {
+    width: 100%;
+    padding: 5%;
+}
+
+.block:nth-child(n) {
+    background-color: #B39DDB;
+}
+
+.block:nth-child(2n) {
+    background-color: #F48FB1;
+}
+
+@media screen and (min-width: 600px) {
+    html {
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 19px;
+        line-height: 19px;
+    }
+    body {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .block {
+        width: 50%;
+        padding: 4%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    html {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    body {
+        flex-direction: row;
+    }
+    .block:nth-child(n) {
+        background-color: #BA68C8;
+    }
+    .block:nth-child(2n) {
+        background-color: #e57373;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .block:nth-child(n) {
+        background-color: #7E57C2;
+    }
+    .block:nth-child(2n) {
+        background-color: #EC407A;
+    }
+}

@@ -1,0 +1,107 @@
+@primary-color: #B39DDB;
+@secondary-color: #F48FB1;
+@primary-tablet-color: #BA68C8;
+@secondary-tablet-color: #e57373;
+@primary-desc-color: #7E57C2;
+@secondary-desc-color: #EC407A;
+
+@primary-size: 16px;
+
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+   font-family: 'Bubbler One', sans-serif;
+   font-size: @primary-size; 
+   line-height: @primary-size;  
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    font-size: 1rem;
+}
+
+.block {
+    width: 100%;
+    padding: 5%;
+}
+
+.block:nth-child(n) {
+    background-color: @primary-color;
+}
+
+.block:nth-child(2n) {
+    background-color: @secondary-color;
+}
+
+
+@media screen and(min-width: 600px){
+    html{
+        font-size: @primary-size + 2px; 
+        line-height: @primary-size + 2px;  
+    }
+}
+
+
+
+@media screen and(min-width: 768px){
+    
+    html{
+        font-size: @primary-size + 3px; 
+        line-height: @primary-size + 3px;  
+    }
+    body{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .block {
+        width: 50%;
+        padding: 4%;
+    }
+}
+
+@media screen and(min-width: 900px){
+    
+    html{
+        font-size: @primary-size + 4px; 
+        line-height: @primary-size + 4px;  
+    }
+    body{
+        flex-direction: row;
+    }
+    .block:nth-child(n) {
+        background-color: @primary-tablet-color;
+    }
+
+    .block:nth-child(2n) {
+        background-color: @secondary-tablet-color;
+    }
+}
+@media screen and(min-width: 1024px){
+    
+    html{
+        font-size: @primary-size + 6px; 
+        line-height: @primary-size + 6px;  
+    }
+}
+
+@media screen and(min-width: 1200px){
+    
+    html{
+        font-size: @primary-size + 8px; 
+        line-height: @primary-size + 8px;  
+    }
+
+    .block:nth-child(n) {
+        background-color: @primary-desc-color;
+    }
+
+    .block:nth-child(2n) {
+        background-color: @secondary-desc-color;
+    }
+}
