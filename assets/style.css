@@ -16,6 +16,24 @@ body {
     font-size: 1rem;
 }
 
+.header {
+    width: 100%;
+	padding: 5%;
+	text-align: center;
+    font-size: 2.5rem;
+	font-weight: bold;
+	color: #EC407A;
+	background-color: #9000D6;
+}
+
+.logIn {
+	width: 100%;
+	padding: 1%;
+	padding-left: 5%;
+	color: #ffffff;
+	background-color: #8A68C8;
+}
+
 .block {
     width: 100%;
     padding: 5%;
